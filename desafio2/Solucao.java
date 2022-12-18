@@ -17,7 +17,7 @@ public class Solucao {
 		System.out.print("Digite o valor a ser retirado do caixa: ");
 		double valorRetirado = sc.nextDouble();
 		while (valorRetirado < 0 || valorRetirado > 1000000.00) {
-			System.out.print("Digite um valor maior que $0 e menor que $1.000.000: ");
+			System.out.print("Digite um valor maior que R$0 e menor que R$1.000.000: ");
 			valorRetirado = sc.nextDouble();
 		}
 		
