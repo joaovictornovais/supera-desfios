@@ -1,7 +1,5 @@
 package desafio2;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -27,9 +25,6 @@ public class Solucao {
 			System.out.println(String.format("%d   nota(s)   de   R$   %d.00", qtdNotas, nota));
 			valorRetirado -= qtdNotas * nota;
 		}
-		
-		BigDecimal centavos = new BigDecimal(valorRetirado);
-		centavos = centavos.setScale(2, RoundingMode.HALF_UP);
 		
 		System.out.println("MOEDAS: ");
 		for (double moeda : moedas) {
